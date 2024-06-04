@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Docs Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;600;700&display=swap"
+    rel="stylesheet">
+  <link href="../css/styles.css" rel="stylesheet" />
+  <style>
+    body {
+      padding-top: 4.5rem;
+    }
+
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      z-index: 100;
+      padding: 80px 20px 20px;
+      overflow-x: hidden;
+      overflow-y: auto;
+      background-color: #f8f9fa;
+      border-right: 1px solid #dee2e6;
+    }
+
+    .content {
+      margin-left: 250px;
+      padding: 20px;
+    }
+
+    .btn-circle {
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      padding: 6px 0;
+      font-size: 12px;
+      line-height: 1.428571429;
+      border-radius: 15px;
+    }
+
+    .btn-circle.btn-lg {
+      width: 50px;
+      height: 50px;
+      padding: 10px 16px;
+      font-size: 18px;
+      line-height: 1.33;
+      border-radius: 25px;
+    }
+
+    .btn-circle.btn-xl {
+      width: 70px;
+      height: 70px;
+      padding: 10px 16px;
+      font-size: 24px;
+      line-height: 1.33;
+      border-radius: 35px;
+    }
+
+    .rounded {
+      border-radius: 2rem !important;
+    }
+
+    .rounded img {
+      border-bottom-left-radius: 2rem !important;
+      border-bottom-right-radius: 2rem !important;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+    <div class="container px-5">
+      <a class="navbar-brand fw-bold" href="">JEEDHOSTING</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="bi-list"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+
+        <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link me-lg-3" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active me-lg-3 " href="docs_page.html">Doc</a>
+          </li>
+
+        </ul>
+
+        <ul class="navbar-nav">
+          <li class="login">
+            <a class="nav-link" href="login_page.php">SignIn</a>
+          </li>
+          <li class="signup">
+            <a class="nav-link" href="register_page.php">SignUp</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="sidebar">
+    <div class="flex-shrink-0 p-3 bg-white">
+      <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+        <span class="fs-5 fw-semibold">DOCS</span>
+      </a>
+      <ul class="list-unstyled ps-0">
+        <li class="mb-1">
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+            data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+            เริ่มต้นใช้งาน
+          </button>
+          <div class="collapse show" id="home-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li>
+                <a href="#Introduction" class="link-dark d-inline-flex text-decoration-none rounded">ขั้นตอนขอใช้บริการ
+                </a>
+              </li>
+              <li>
+                <a href="#apply" class="link-dark d-inline-flex text-decoration-none rounded">ขั้นตอนต่อบริการ</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="mb-1">
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+            data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+            การเข้าใช้งานโฮสติ้ง
+          </button>
+          <div class="collapse" id="dashboard-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li>
+                <a href="#v1" class="link-dark d-inline-flex text-decoration-none rounded">เข้าใช้งาน</a>
+              </li>
+              <li>
+                <a href="#v2" class="link-dark d-inline-flex text-decoration-none rounded">อัปโหลดไฟล์</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="border-top my-3"></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="content">
+    <div id="Introduction" class="container-fluid">
+      <h1>ขั้นตอนขอใช้บริการ</h1>
+      <div class="p-3  ">
+        <!-- how to 1 -->
+        <div class="shadow-lg  rounded ">
+          <div class="d-inline-flex  p-3">
+            <button class="btn btn-info btn-circle btn-lg me-lg-3 ">
+              <h4>1</h4>
+            </button>
+            <h2>กดที่ปุ่ม "Add Host"</h2>
+
+          </div>
+          <img src="../img/u_a_1.png" class="img-fluid " alt="" width="100%">
+        </div>
+        <hr class="my-5">
+        <!-- how to 2 -->
+        <div class="shadow-lg  rounded ">
+          <div class="d-inline-flex  p-3">
+            <button class="btn btn-info btn-circle btn-lg me-lg-3 ">
+              <h4>2</h4>
+            </button>
+            <h2>กรอกข้อมูล</h2>
+
+          </div>
+          <img src="../img/u_a_2.png" class="img-fluid " alt="" width="100%">
+        </div>
+        <hr class="my-5">
+        <!-- how to 3 -->
+        <div class="shadow-lg  rounded ">
+          <div class="d-inline-flex  p-3">
+            <button class="btn btn-info btn-circle btn-lg me-lg-3 ">
+              <h4>3</h4>
+            </button>
+            <h2>ทำรายการเสร็จสิ้น</h2>
+          </div>
+          <p class="ms-5 text-black-50">รอการตรวจสอบ จาก Admin ผ่านทาง Email</p>
+          <img src="../img/u_a_5.png" class="img-fluid " alt="" width="100%">
+        </div>
+        <hr class="my-5">
+      </div>
+    </div>
+
+    <div id="apply" class="container-fluid">
+      <h1>ขั้นตอนการต่ออายุ</h1>
+      <div class="p-3  ">
+        <!-- how to 1 -->
+        <div class="shadow-lg  rounded ">
+          <div class="d-inline-flex  p-3">
+            <button class="btn btn-info btn-circle btn-lg me-lg-3 ">
+              <h4>1</h4>
+            </button>
+            <h2>กดที่ปุ่ม "Renewal"</h2>
+
+          </div>
+          <img src="../img/u_r_1.png" class="img-fluid " alt="" width="100%">
+        </div>
+        <hr class="my-5">
+        <!-- how to 2 -->
+        <div class="shadow-lg  rounded ">
+          <div class="d-inline-flex  p-3">
+            <button class="btn btn-info btn-circle btn-lg me-lg-3 ">
+              <h4>2</h4>
+            </button>
+            <h2>กรอกข้อมูล</h2>
+
+          </div>
+          <img src="../img/u_r_2.png" class="img-fluid " alt="" width="100%">
+        </div>
+        <hr class="my-5">
+        <!-- how to 3 -->
+        <div class="shadow-lg  rounded ">
+          <div class="d-inline-flex  p-3">
+            <button class="btn btn-info btn-circle btn-lg me-lg-3 ">
+              <h4>3</h4>
+            </button>
+            <h2>ทำรายการเสร็จสิ้น</h2>
+          </div>
+          <p class="ms-5 text-black-50">รอการตรวจสอบ จาก Admin ผ่านทาง Email</p>
+          <img src="../img/u_r_3.png" class="img-fluid " alt="" width="100%">
+        </div>
+        <hr class="my-5">
+      </div>
+    </div>
+
+    <div id="v1" class="container-fluid">
+      <h1>ขั้นตอนเข้าใช้งาน</h1>
+      <div class="p-3  ">
+        <!-- how to 1 -->
+        <div class="shadow-lg  rounded ">
+          <div class="d-inline-flex  p-3">
+            <button class="btn btn-info btn-circle btn-lg me-lg-3 ">
+              <h4>1</h4>
+            </button>
+            <h2>กรอก Domain ผ่านทาง url</h2>
+          </div>
+          <p class="ms-5 my-0 text-black-50">กรอก Domain และตามด้วย port 444</p>
+          <p class="ms-5 text-black-50">ตัวอย่าง : sommai.jeedhosting.com:444</p>
+          <img src="../img/u_h_1.png" class="img-fluid " alt="" width="100%">
+        </div>
+        <hr class="my-5">
+      </div>
+    </div>
+
+    <div id="v2" class="container-fluid">
+      <h1>ขั้นตอนการอัปโหลดไฟล์</h1>
+      <div class="p-3  ">
+        <!-- how to 1 -->
+        <div class="shadow-lg  rounded ">
+          <div class="d-inline-flex  p-3">
+            <button class="btn btn-info btn-circle btn-lg me-lg-3 ">
+              <h4>1</h4>
+            </button>
+            <h2>Click ที่ File Manager</h2>
+          </div>
+          <img src="../img/u_h_2.png" class="img-fluid " alt="" width="100%">
+        </div>
+        <hr class="my-5">
+        <!-- how to 2 -->
+        <div class="shadow-lg  rounded ">
+          <div class="d-inline-flex  p-3">
+            <button class="btn btn-info btn-circle btn-lg me-lg-3 ">
+              <h4>2</h4>
+            </button>
+            <h2>เลือกการอัปโหลด</h2>
+          </div>
+          <img src="../img/u_h_3.png" class="img-fluid " alt="" width="100%">
+        </div>
+        <hr class="my-5">
+        <!-- how to 3 -->
+        <div class="shadow-lg  rounded ">
+          <div class="d-inline-flex  p-3">
+            <button class="btn btn-info btn-circle btn-lg me-lg-3 ">
+              <h4>3</h4>
+            </button>
+            <h2>Click เพื่อเลือกไฟล์</h2>
+          </div>
+          <img src="../img/u_h_4.png" class="img-fluid " alt="" width="100%">
+        </div>
+        <hr class="my-5">
+        <!-- how to 4 -->
+        <div class="shadow-lg  rounded ">
+          <div class="d-inline-flex  p-3">
+            <button class="btn btn-info btn-circle btn-lg me-lg-3 ">
+              <h4>4</h4>
+            </button>
+            <h2>เลือกไฟล์ของคุณ และ อัปโหลดไฟล์</h2>
+          </div>
+          <img src="../img/u_h_5.png" class="img-fluid " alt="" width="100%">
+        </div>
+        <hr class="my-5">
+        <!-- how to 5 -->
+        <div class="shadow-lg  rounded ">
+          <div class="d-inline-flex  p-3">
+            <button class="btn btn-info btn-circle btn-lg me-lg-3 ">
+              <h4>5</h4>
+            </button>
+            <h2>อัปโหลดสำเรจ</h2>
+          </div>
+          <img src="../img/u_h_6.png" class="img-fluid " alt="" width="100%">
+        </div>
+        <hr class="my-5">
+        <!-- how to 6 -->
+        <div class="shadow-lg  rounded ">
+          <div class="d-inline-flex  p-3">
+            <button class="btn btn-info btn-circle btn-lg me-lg-3 ">
+              <h4>6</h4>
+            </button>
+            <h2>เสร็จสมบูรณ์</h2>
+          </div>
+          <img src="../img/u_h_7.png" class="img-fluid " alt="" width="100%">
+        </div>
+        <hr class="my-5">
+      </div>
+    </div>
+  </div>
+
+  <script src="../vendor/bootstrap/js/5.2/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

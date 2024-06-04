@@ -1,0 +1,16 @@
+.login-image {
+  background: url("../img/host.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.register-image {
+  background: url("../img/register.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.explain{
+    font-size: 12px;
+    color: #ffbb00;
+}
