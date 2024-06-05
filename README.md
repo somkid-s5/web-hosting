@@ -3,7 +3,7 @@
 
 # Project Title
 
-### My final project, Web Hosting Service System
+### My Senior Project, Web Hosting Service System
 
 
 ## Tech Stack
